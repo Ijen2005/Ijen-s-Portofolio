@@ -57,7 +57,15 @@
         }
 
         .bento-item img, .bento-item video { 
-            width: 100%; height: 100%; object-fit: cover; transition: 0.5s ease; 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: 0.5s ease; 
+        }
+
+        /* ✅ FIX: Alicia video slightly shifted right */
+        video[src*="Alicia"] {
+            object-position: 60% center;
         }
 
         /* ROW 1 Logic */
